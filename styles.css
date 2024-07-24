@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+}
+  
+ .navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%; 
+    padding: 10px;
+}
+h1{
+    padding-left: 20px;
+}
+
+ .logo {
+    display: inline-block;
+
+}
+.logoh1{
+    color: #f39c12;
+}
+
+.nav-links {
+    list-style: none;
+    padding-right: 50px;
+    float: right;
+    padding-top: 6px;
+
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    position: relative;
+}
+.nav-links a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    background-color: #f39c12;
+    transition: all 0.5s;
+}
+.nav-links a:hover::before {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+.search-box {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 30%;
+    transform: translateX(-50%,-50%);
+}
+.search-box input {
+    padding: 5px 50px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+}
+
+input[type=text]{
+    padding: 7px 20px 7px 10px;
+  }
+.search-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #f39c12;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.hero{ 
+ width: 100%;
+ overflow: hidden;
+ background-color: antiquewhite;
+}
+.hero img{
+    width: 100%;
+    cursor: pointer;   
+}
+.selider{
+    width: 100%;
+    white-space: nowrap;
+    background-color: antiquewhite;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+.selider-img{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    animation: slide infinite 5s linear;
+}
+.selider-img img{
+    width: 140px;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+} 
+#product{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.card {
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card .disc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffd700;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.card .price-1 {
+    text-decoration: line-through;
+    color: #757575;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.card .price {
+    color: #e53935;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card .available {
+    color: #4caf50;
+    margin: 5px 0;
+}
+
+.card .details {
+    font-size: 12px;
+    color: #757575;
+    margin: 5px 0;
+}
+
+.card .rating {
+    margin: 10px 0;
+}
+
+.card .rating .stars {
+    color: #ffeb3b;
+    font-size: 14px;
+}
+
+.card .rating .review {
+    font-size: 12px;
+    color: #757575;
+    margin-left: 5px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateX(-50%, -50%);
+    z-index: 1;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+  
